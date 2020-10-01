@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #97112e;
+}
+
+.topnav ul {
+    list-style: none;
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 17px;
+    line-height: 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: -15px;
+}
+
+.topnav a:hover {
+    background-color: #700d2350;
+    color: black;
+}
+.active{
+    background-color: #791228;
+}
+.topnav .icon {
+    display: none;
+}
+
+/* CONTAINER */
+
+.container {
+    margin: 30px 20px auto;
+}
+
+/* RODAPÉ */
+footer {
+    position: absolute;
+    background-color: #1d2025;
+    color: #f4f4f4;
+    text-align: center;
+    width: 100%;
+    line-height: 51px;
+    /* top: 100%; */
+}
+
+@media screen and (max-width: 700px) {
+
+    .container {
+        margin: 80px 20px;
+    }
+
+    .topnav {
+        position: fixed;
+        width: 100%;
+        background-color: #97112e;
+        top: 0px;
+        display: block;
+    }
+
+    .topnav li {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: initial;
+        margin-top: auto;
+    }
+
+    /* ...... */
+    .topnav.responsive {
+        position: fixed;
+    }
+
+    .topnav.responsive li {
+        margin: 5px 0px;
+        display: block;
+    }
+
+    .topnav.responsive a {
+        float: none;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        left: 0;
+    }
+
+
+}
